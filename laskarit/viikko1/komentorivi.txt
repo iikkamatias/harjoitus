@@ -22,3 +22,9 @@ kurssit
 
 15 directories, 5 files
 
+
+
+
+
+
+tee GitHubiin muutos johonkin muualle kuin README.md-tiedostoon
