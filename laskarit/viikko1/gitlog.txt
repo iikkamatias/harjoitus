@@ -1,3 +1,5 @@
+En ehtinyt tehdä tehtävää yliopiston koneella, ja omalla koneella (Windows), cat komento ei onnistunut :(
+
 fatal: ambiguous argument 'cat': unknown revision or path not in the working 
 tree.
 Use '--' to separate paths from revisions, like this:
