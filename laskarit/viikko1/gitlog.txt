@@ -1,8 +1,965 @@
-En ehtinyt tehdä tehtävää yliopiston koneella, ja omalla koneella (Windows), cat komento ei onnistunut :(
 
-fatal: ambiguous argument 'cat': unknown revision or path not in the working 
-tree.
-Use '--' to separate paths from revisions, like this:
-'git <command> [<revision>...] -- [<file>...]'
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config --global user.name iita
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config --global user.email iikka.talvala@helsinki.fi
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config -l
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+credential.helper=manager
+user.name=iita
+user.email=iikka.talvala@helsinki.fi
+core.editor=nano
+push.default=matching
+difftool.sourcetree.cmd='' "$LOCAL" "$REMOTE"
+mergetool.sourcetree.cmd=''
+mergetool.sourcetree.trustexitcode=true
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config --global color.ui
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config --global core.editor nano
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ git config --global push.default matching
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ cd ot_viikko1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot_viikko1
+$ ls
+eka.txt  kolmas.txt  stuff/  tiedostoja/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot_viikko1
+$ git init
+Initialized empty Git repository in C:/Users/iikka/ot_viikko1/.git/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot_viikko1 (master)
+$ ls -ls
+total 9
+8 -rw-r--r-- 1 iikka 197609 4984 maalis 19  2019 eka.txt
+1 -rw-r--r-- 1 iikka 197609   59 maalis 19  2019 kolmas.txt
+0 drwxr-xr-x 1 iikka 197609    0 maalis 19  2019 stuff/
+0 drwxr-xr-x 1 iikka 197609    0 maalis 19  2019 tiedostoja/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot_viikko1 (master)
+$ ls -la
+total 33
+drwxr-xr-x 1 iikka 197609    0 maalis 19  2019 ./
+drwxr-xr-x 1 iikka 197609    0 marras  5 18:19 ../
+drwxr-xr-x 1 iikka 197609    0 marras  5 18:22 .git/
+-rw-r--r-- 1 iikka 197609 4984 maalis 19  2019 eka.txt
+-rw-r--r-- 1 iikka 197609   59 maalis 19  2019 kolmas.txt
+drwxr-xr-x 1 iikka 197609    0 maalis 19  2019 stuff/
+drwxr-xr-x 1 iikka 197609    0 maalis 19  2019 tiedostoja/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot_viikko1 (master)
+$ cd ..
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ kansio/
+ Käynnistä-valikko@
+ lapio/
+ Lapio-website/
+ Links/
+'Local Settings'@
+ Mallit@
+ MicrosoftEdgeBackups/
+ Music/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{d91de508-bd35-11e9-af58-f1bdcce3a271}.TM.blf
+ NTUSER.DAT{d91de508-bd35-11e9-af58-f1bdcce3a271}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{d91de508-bd35-11e9-af58-f1bdcce3a271}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+'Omat tiedostot'@
+ OneDrive/
+'OneDrive - University of Helsinki'/
+ ot_viikko1/
+ ot-harjoitustyo/
+ Pictures/
+ Recent@
+ Roaming/
+'Saved Games'/
+ Searches/
+ Sendto@
+ test/
+ titokone.cfg
+ Tulostinympäristö@
+ työväline/
+ Verkkoympäristö@
+ Videos/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ cd ot_harjoitustyo
+bash: cd: ot_harjoitustyo: No such file or directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~
+$ cd ot-harjoitustyo
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo (master)
+$ mkdir ot_viikko1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo (master)
+$ cd ot_viikko1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/iikka/ot-harjoitustyo/ot_viikko1/.git/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls -la
+total 8
+drwxr-xr-x 1 iikka 197609 0 marras  5 18:46 ./
+drwxr-xr-x 1 iikka 197609 0 marras  5 18:45 ../
+drwxr-xr-x 1 iikka 197609 0 marras  5 18:46 .git/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ touch tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        tiedosto.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   tiedosto.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m "tiedosto.txt luotu"
+[master (root-commit) d2d8981] tiedosto.txt luotu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ touch toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   tiedosto.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        toinen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in tiedosto.txt.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   tiedosto.txt
+        new file:   toinen.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"muutos ja lisäys"
+[master d0cc7b4] muutos ja lisäys
+ 2 files changed, 1 insertion(+)
+ create mode 100644 toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git log
+commit d0cc7b4d035b6a79828eb17c0a4d25a3d04bdd2a (HEAD -> master)
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:52:14 2019 +0200
+
+    muutos ja lisäys
+
+commit d2d8981b3206d9049d5400c3cdb52ebbd4c017ca
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:48:08 2019 +0200
+
+    tiedosto.txt luotu
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ touch kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   kolmas.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"lisätty kolmas.txt"
+[master e7ef31e] lisätty kolmas.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in toinen.txt.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"tiedostoja toinen.txt ja kolmas.txt muokattu"
+[master 1ad58fd] tiedostoja toinen.txt ja kolmas.txt muokattu
+ 2 files changed, 2 insertions(+)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ mkdir stuff
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"lisätty hakemisto stuff"
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ cd stuff
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ touch jokin.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   jokin.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ git commit -m"lisätty jokin.txt hakemistoon stuff"
+[master 63d639a] lisätty jokin.txt hakemistoon stuff
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 stuff/jokin.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ git log
+commit 63d639abbde52bcf2350b0d0696ff238ba8932cf (HEAD -> master)
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:59:19 2019 +0200
+
+    lisätty jokin.txt hakemistoon stuff
+
+commit 1ad58fd2050aeffe8333ad07bd3693d7570e3d43
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:56:44 2019 +0200
+
+    tiedostoja toinen.txt ja kolmas.txt muokattu
+
+commit e7ef31e53ee99901487c46bcec974fa88ce29ff3
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:54:50 2019 +0200
+
+    lisätty kolmas.txt
+
+commit d0cc7b4d035b6a79828eb17c0a4d25a3d04bdd2a
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 18:52:14 2019 +0200
+
+    muutos ja lisäys
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ nano tiedosto.txt
+bash: $'\302\224\302\224\302\224\302\224t\302\224nano': command not found
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ ls
+jokin.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1/stuff (master)
+$ cd ..
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+kolmas.txt  stuff/  tiedosto.txt  toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in tiedosto.txt.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"muokattu tiedosto.txt"
+[master 9646014] muokattu tiedosto.txt
+ 1 file changed, 90 insertions(+), 1 deletion(-)
+ rewrite tiedosto.txt (100%)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in tiedosto.txt.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"muokattu taas tiedosto.txt"
+[master 377b162] muokattu taas tiedosto.txt
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+kolmas.txt  stuff/  tiedosto.txt  toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ rm toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+kolmas.txt  stuff/  tiedosto.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    toinen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    toinen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"poisto"
+[master 060d1a0] poisto
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 toinen.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ mv tiedosto.txt eka.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+eka.txt  kolmas.txt  stuff/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    tiedosto.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in eka.txt.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"tiedosto.txt muutettu eka.txt"
+[master 43927c9] tiedosto.txt muutettu eka.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename tiedosto.txt => eka.txt (100%)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano eka.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add -p
+warning: LF will be replaced by CRLF in eka.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in eka.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in eka.txt.
+The file will have its original line endings in your working directory
+diff --git a/eka.txt b/eka.txt
+index 4103fc4..1c3c141 100644
+--- a/eka.txt
++++ b/eka.txt
+@@ -1,4 +1,5 @@
+-Me ollaan nyt asuttu viikko marsujen kanssa siskon vanhassa
++Lisää muutoksia Me ollaan nyt asuttu viikko marsujen kanssa siskon
++vanhassa
+ huoneessa. Tää on ihan kiva, yksi seinä on maalattu ruskeaksi ja
+ sopii hyvin marsujen häkin väriin. Marsutkin viihtyvät hyvin ja ovat
+ oikein urakalla käynneet koko huoneen läpi :)
+Stage this hunk [y,n,q,a,d,e,?]? y
+<stdin>:7: trailing whitespace.
+Lisää muutoksia Me ollaan nyt asuttu viikko marsujen kanssa siskon
+<stdin>:8: trailing whitespace.
+vanhassa
+warning: 2 lines add whitespace errors.
+
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+diff --git a/kolmas.txt b/kolmas.txt
+index 7cb5c23..d9a2ac3 100644
+--- a/kolmas.txt
++++ b/kolmas.txt
+@@ -1 +1 @@
+-Muutos myös tänne
++Muutos myös lisääsäsäsääsäsäsääsäsääsäs
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   eka.txt
+        modified:   kolmas.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git commit -m"taas muutoksia"
+[master d6592ee] taas muutoksia
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano eka.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git checkout -- eka.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ nano kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git add -p
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in kolmas.txt.
+The file will have its original line endings in your working directory
+diff --git a/kolmas.txt b/kolmas.txt
+index d9a2ac3..2009a07 100644
+--- a/kolmas.txt
++++ b/kolmas.txt
+@@ -1 +1 @@
+-Muutos myös lisääsäsäsääsäsäsääsäsääsäs
++muutoooooooosososoosMuutos myös lisääsäsäsääsäsäsääsäsääsäs
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   kolmas.txt
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git reset HEAD kolmas.txt
+Unstaged changes after reset:
+M       kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ git checkout -- kolmas.txt
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ ls
+eka.txt  kolmas.txt  stuff/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/ot_viikko1 (master)
+$ cd ..
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo (master)
+$ ls
+laskarit/  ot_viikko1/  Projekti/  README.md  Tuntikirjanpito/
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo (master)
+$ mkdir tiedostoja
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo (master)
+$ cd tiedostoja
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ touch file1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ touch file2
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ touch file3
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   file1
+        new file:   file2
+        new file:   file3
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.gitignore
+        ../Tuntikirjanpito/
+        ../laskarit/viikko2/Maksukortti/
+        ../laskarit/viikko2/Uni/Unicafe/src/test/java/KassapaateTest.java
+        ../ot_viikko1/
+
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git commit -m"lisätty tietostoja"
+[master 079be1b] lisätty tietostoja
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiedostoja/file1
+ create mode 100644 tiedostoja/file2
+ create mode 100644 tiedostoja/file3
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.gitignore
+        ../Tuntikirjanpito/
+        ../laskarit/viikko2/Maksukortti/
+        ../laskarit/viikko2/Uni/Unicafe/src/test/java/KassapaateTest.java
+        ../ot_viikko1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ nano file1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ rm file2
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git checkout -- file1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git checkout -- file2
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../.gitignore
+        ../Tuntikirjanpito/
+        ../laskarit/viikko2/Maksukortti/
+        ../laskarit/viikko2/Uni/Unicafe/src/test/java/KassapaateTest.java
+        ../ot_viikko1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ nano file3
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git add .
+warning: LF will be replaced by CRLF in tiedostoja/file3.
+The file will have its original line endings in your working directory
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git reset HEAD file3
+Unstaged changes after reset:
+M       tiedostoja/file3
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git checkout -- file3
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ rm file1
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ mv file2 file22
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git add .
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git commit -m"muutoksia"
+[master 5af2fc7] muutoksia
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 tiedostoja/file2
+ rename tiedostoja/{file1 => file22} (100%)
+
+iikka@DESKTOP-O70UO95 MINGW64 ~/ot-harjoitustyo/tiedostoja (master)
+$ git log --stat | cat
+commit 5af2fc74fefc803e64ee3f88cf0fc18ceb359cc2
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 19:28:22 2019 +0200
+
+    muutoksia
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 079be1b93e1a30dea7923100a988a9a3a4daea83
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Nov 5 19:23:16 2019 +0200
+
+    lisätty tietostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b155017763b41dc30d79531edda5612404acf8dc
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Apr 2 15:39:37 2019 +0300
+
+    gitignore lisätty
+
+ Projekti/.gitignore |  1 +
+ Projekti/pom.xml    | 13 +++++++++++++
+ 2 files changed, 14 insertions(+)
+
+commit a89c1055053c16adec4e47eae69ad7cf8ffbcef4
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Apr 2 14:52:43 2019 +0300
+
+ laskarit/viikko2/Uni/Unicafe/nbactions.xml               |  10 ++++++++++
+ .../classes/com/mycompany/unicafe/Kassapaate.class       | Bin 1624 -> 0 bytes
+ .../classes/com/mycompany/unicafe/Maksukortti.class      | Bin 1062 -> 0 bytes
+ .../classes/com/mycompany/unicafe/Paaohjelma.class       | Bin 949 -> 0 bytes
+ .../com/mycompany/unicafe/MaksukorttiTest.class          | Bin 786 -> 0 bytes
+ 5 files changed, 10 insertions(+)
+
+commit cdfa4540548ba5534004fbbd4c9039b172756858
+Author: iita <iikka.talvala@helsinki.fi>
+Date:   Tue Apr 2 14:08:51 2019 +0300
+
+    Unicafe siirretty repositorioon
+
+ laskarit/viikko2/Uni/Unicafe/.classpath            |  32 +++++++++
+ laskarit/viikko2/Uni/Unicafe/.project              |  23 +++++++
+ .../.settings/org.eclipse.core.resources.prefs     |   5 ++
+ .../Unicafe/.settings/org.eclipse.jdt.core.prefs   |   5 ++
+ .../Unicafe/.settings/org.eclipse.m2e.core.prefs   |   4 ++
+ laskarit/viikko2/Uni/Unicafe/pom.xml               |  52 +++++++++++++++
+ .../java/com/mycompany/unicafe/Kassapaate.java     |  74 +++++++++++++++++++++
+ .../java/com/mycompany/unicafe/Maksukortti.java    |  36 ++++++++++
+ .../java/com/mycompany/unicafe/Paaohjelma.java     |  14 ++++
+ .../com/mycompany/unicafe/MaksukorttiTest.java     |  20 ++++++
+ .../classes/com/mycompany/unicafe/Kassapaate.class | Bin 0 -> 1624 bytes
+ .../com/mycompany/unicafe/Maksukortti.class        | Bin 0 -> 1062 bytes
+ .../classes/com/mycompany/unicafe/Paaohjelma.class | Bin 0 -> 949 bytes
+ .../com/mycompany/unicafe/MaksukorttiTest.class    | Bin 0 -> 786 bytes
+ 14 files changed, 265 insertions(+)
+
+commit 3aff5a04f530c6fe182f2ce547ed83d694340ec9
+Merge: 2561257 9eb8cb1
+Author: Iikka <iikka.talvala@helsinki.fi>
+Date:   Tue Mar 19 22:34:52 2019 +0200
+
+    Merge branch 'master' of github.com:iikkamatias/ot-harjoitustyo
+
+commit 9eb8cb1062576b0003680f979caa1076a7d0171a
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:33:47 2019 +0200
+
+    Update komentorivi.txt
+
+ laskarit/viikko1/komentorivi.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit 25612574be4103789598ff4a780b8cfe3502c9b5
+Author: Iikka <iikka.talvala@helsinki.fi>
+Date:   Tue Mar 19 22:32:27 2019 +0200
+
+    tehdään epäsynkronointi README.md
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 319e6e374f6b262f323264bc4233de7f0b02bfc5
+Author: Iikka <iikka.talvala@helsinki.fi>
+Date:   Tue Mar 19 22:29:43 2019 +0200
+
+    lisäsin tekstiä README.md
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 99be332bfdbe56ba88a1957480a74de108c4af22
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:26:53 2019 +0200
+
+    Update README.md
+
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 6f6b6b9d8d70e6924813b0c452c32297ce330a66
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:26:20 2019 +0200
+
+    Update README.md
+
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 7a33cc7675ffbb14205fbc9c6c8efef9a1fe10d1
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:25:18 2019 +0200
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2015cd770faf00c2edbd9cfedc83b3dbcce738eb
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:23:17 2019 +0200
+
+    Update README.md
+
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 94f6b0e0f9946c487b8f933f12c0be6f5a8106b2
+Author: iikkamatias <48556385+iikkamatias@users.noreply.github.com>
+Date:   Tue Mar 19 22:20:48 2019 +0200
+
+    Update README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit da0d495c855122d1633050e437cc21c1890d2c22
+Author: Iikka <iikka.talvala@helsinki.fi>
+Date:   Tue Mar 19 22:15:34 2019 +0200
+
+    muokattu README.md ja kopioitu tekstit gitlog.txt ja komentorivi.txt
+
+ README.md                        |  3 +++
+ laskarit/viikko1/gitlog.txt      |  5 +++++
+ laskarit/viikko1/komentorivi.txt | 24 ++++++++++++++++++++++++
+ 3 files changed, 32 insertions(+)
+
+commit 39126aa17327312fbed90685117783c696cd0db3
+Author: Iikka <iikka.talvala@helsinki.fi>
+Date:   Tue Mar 19 21:17:19 2019 +0200
+
+    initial commit
+
+ README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
 
 
