@@ -35,6 +35,7 @@ public class MaksukorttiTest {
     public void syoEdullisestiEiVieSaldoaNegatiiviseksi() {
         kortti.syoMaukkaasti();
         kortti.syoMaukkaasti();
+        // nyt kortin saldo on 2
         kortti.syoEdullisesti();
         assertEquals("Kortilla on rahaa 2.0 euroa", kortti.toString());
     }
@@ -77,7 +78,7 @@ public class MaksukorttiTest {
     @Test
     public void KortillaVoiOstaaMaukkaanLounaan(){
         kortti.lataaRahaa(2);
-        //kortilla on nt rahaa 12 euroa
+        //kortilla on nyt rahaa 12 euroa
         kortti.syoMaukkaasti();
         kortti.syoMaukkaasti();
         kortti.syoMaukkaasti();
