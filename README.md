@@ -5,4 +5,4 @@ Tässä on linkki tiedostoon [komentorivi.txt](https://github.com/iikkamatias/ot
 
 Tässä on linkki [työaikakirjanpitooon](https://github.com/iikkamatias/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
-Tässä on linkki [määrittelydokumenttiin](https://github.com/iikkamatias/ot-harjoitustyo/blob/master/dokumentointi/maarittelydokumentti)
+Tässä on linkki [vaatimusmäärittelydokumenttiin](https://github.com/iikkamatias/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
