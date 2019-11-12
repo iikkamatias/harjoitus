@@ -1,14 +1,14 @@
-#Vaatimusmäärittely
+# Vaatimusmäärittely
 
-##Sovellus
+## Sovellus
 
 Sovelluksen on tarkoitus olla ohjelmoinninjatkokurssilla esiintynyt Asteroids-peli. Pelissä pelaaja väistelee ja yrittää ampua objekteja kaksiulotteisessa graafisessa ympäristössä.
 
-##Käyttäjät
+## Käyttäjät
 
 Sovelluksessa on vain normaaleja käyttäjiä, ei siis muita käyttäjärooleja.
 
-##Toiminnallisuus
+## Toiminnallisuus
 
 Avaruusalusta liikutetaan peliruudulla nuolinäppäimien avulla
 Objekteja ilmestyy ruutuun sattumanvaraisesti
