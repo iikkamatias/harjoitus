@@ -1,4 +1,4 @@
-Linkki viikon 2 laskareihin [Laskarit2](https://github.com/iikkamatias/ot-harjoitustyo/tree/master/laskarit/viikko2)
+Linkki viikon 3 laskareihin [Laskarit3](https://github.com/iikkamatias/ot-harjoitustyo/tree/master/laskarit/viikko3)
 
 # [Dokumentaatio](https://github.com/iikkamatias/ot-harjoitustyo/tree/master/dokumentointi)
 
