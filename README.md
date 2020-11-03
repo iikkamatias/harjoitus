@@ -3,3 +3,7 @@
 [työaikakirjanpito](https://github.com/iikkamatias/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
 [vaatimusmäärittelydokumentti](https://github.com/iikkamatias/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDrhb6rpIDGY4ALCaVYERnbueUNrdifHYWj++linD/3m0YIHlSgfExEA4lsblq8OSCxsSo/0u+RBoj130fd4TQQuyXw/USDvggi1jqsdd3HrypmOiRJdZZoeuuGJhNOLq6WhAOqzA+tbXknaBrZanXJ19mQilTls4QDjvnrdI7ej4qUsQ/M30RqzncuFPlq21RQT3EBK7dcmWGZDywsuUUFiOhgtSS1IBLFtmNfU/OovtNJRyKGYDCMipp9U9dG/2mHk1Guss6fPCEmztA7uiONAf0d3AcSb7YGFuIuFRBBITRP4O4zYxoSk6ieW7hzE9vYaktq31H89j5g1JKU8QtV iikka@iikka-VirtualBox
